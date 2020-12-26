@@ -17,7 +17,7 @@
 10)std::max_element
 11)bool std::binary_search (vec.begin(), vec.end(), value, [opt] comp)
    returns true if a value exists in a sorted list.
-12)iterator std::equal_range returns the iterators to the first and last element
+12)iterator std::equal_range 
    returns a range containing all elements equivalent to value in the range [first, last).
    A fully-sorted range meets these criteria.
    The returned range is defined by two iterators, one pointing to the first element that is not

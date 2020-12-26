@@ -9,7 +9,8 @@
                 "${file}",
                 "-o",
                 "${workspaceFolder}\\out\\${fileBasenameNoExtension}.exe",
-                "-std=c++17"
+                "-std=c++17",
+                "-Wall",
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
