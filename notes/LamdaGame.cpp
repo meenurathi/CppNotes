@@ -30,7 +30,7 @@ list_type generateNumbers(int start, int count, int multiplier){
         number = ((i *i) * multiplier);
         i++;
     }
-  //  printNumbers(numbers);
+    printNumbers(numbers);
     return numbers;
 }
 
@@ -99,8 +99,6 @@ int main(){
 
     int multiplier{getRandomInt(config::min,config::max)};
     auto numbers{generateUserNumbers(multiplier)};
-    std::cout<<"\n size= "<<numbers.size()<<"\n";
-    printNumbers(numbers);
     printTask(numbers.size(), multiplier);
     while(playRound(numbers));
     return 0;

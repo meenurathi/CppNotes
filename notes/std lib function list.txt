@@ -15,3 +15,15 @@
    returns if all elements are passing condition specifies by passed func
 9)next(itr) -->move itr to next
 10)std::max_element
+11)bool std::binary_search (vec.begin(), vec.end(), value, [opt] comp)
+   returns true if a value exists in a sorted list.
+12)iterator std::equal_range returns the iterators to the first and last element
+   returns a range containing all elements equivalent to value in the range [first, last).
+   A fully-sorted range meets these criteria.
+   The returned range is defined by two iterators, one pointing to the first element that is not
+   less than value and another pointing to the first element greater than value. The first 
+   iterator may be alternatively obtained with std::lower_bound(), the second - with std::upper_bound().
+13)ForwardIt lower_bound( ForwardIt first, ForwardIt last, const T& value, Compare comp );
+    Returns an iterator pointing to the first element in the range [first, last) that is not less tha
+    (i.e. greater or equal to) value, or last if no such element is found.
+ 14) std::upper_bound().
