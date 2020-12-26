@@ -1,0 +1,17 @@
+
+1)iterator std::find( x.begin(), x.end(), val)
+  iterator find_if(begin, end, (bool)func)
+  iterator to first adjacent_find(begin, end, func) 
+2)std::sort(x.begin, x.end(), [optional] greater{}) >for decreasing order use greater<int>
+  std::sort(std::begin(cstylearray), std::end(cstylearray))
+3)void std::swap(x, y)
+4)int std::count(begin, end, value)
+5) int count_if(begin, end, bool (par1, par2)func)
+6) for_each(begin, end, func)
+   c++20 > std::ranges::for_each(arr, funct)
+   sequential guarantees.
+7) copy copy_backward   move move_backward  sequential guarantees.
+8) std::all_of(array.begin(), array.end(), isEven);
+   returns if all elements are passing condition specifies by passed func
+9)next(itr) -->move itr to next
+10)std::max_element
