@@ -449,4 +449,7 @@ Cents{ 7 }; // anonymous object
         }
 /* ...Nested members
     // C++ will let you define other types within a class, such as typedefs, type aliases, and even other classes!
-    Like any normal member of a class, nested classes have the same access to members of the enclosing class that the enclosing class does. However, the nested class does not have any special access to the “this” pointer of the enclosing class. */
+    Like any normal member of a class, nested classes have the same access to members of the enclosing class that the enclosing class does.
+    limitation>>
+        1) the nested class does not have any special access to the “this” pointer of the enclosing class.
+        2) they can’t be forward declared. */
