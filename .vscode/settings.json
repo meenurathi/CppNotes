@@ -43,6 +43,7 @@
         "initializer_list": "cpp",
         "ctime": "cpp",
         "numeric": "cpp",
-        "random": "cpp"
+        "random": "cpp",
+        "cstring": "cpp"
     }
 }
