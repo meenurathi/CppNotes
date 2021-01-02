@@ -72,6 +72,7 @@ public:
         return *this;
     }
     int getLength(){ return m_size;}
+    // erase(), which will erase the array and set the length to 0.
     void erase(){
         delete[] m_data;
         m_size=0;
@@ -85,21 +86,26 @@ public:
         m_size = size;
         m_data = new int[size]{};
     }
+    
+    // resize resizes the array.  Any existing elements will be kept.  This function operates slowly.
     void resize(int size){
         if(size == m_size)
             return;
-        if(size == 0){
+        if(size <= 0){
             erase();  
-        }else{
-            int newSize { (size < m_size)? size : m_size};
-            int *newData{new int[newSize]{}};
-            for(auto i{0}; i < newSize; ++i){
+            return;
+        }
+
+        int *newData{new int[size]{}};
+        if(m_size> 0){
+            int elementToCopy { (size < m_size)? size : m_size};            
+            for(auto i{0}; i < elementToCopy; ++i){
                 newData[i]= m_data[i];
-            }
-            delete[] m_data;
-            m_data = newData;
-            m_size = newSize;
-        }   
+            }            
+        }
+        delete[] m_data;
+        m_data = newData;
+        m_size = size;
     }
     void insertBefore(int value, int index){
         assert(index <= m_size && index >=0);
