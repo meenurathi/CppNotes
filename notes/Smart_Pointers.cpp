@@ -63,17 +63,17 @@ int main(){
     return 0;
 }
 
-/* 
-This program prints:
+    /* 
+    This program prints:
 
-Resource acquired
-res1 is not null
-res2 is null
-Ownership transferred
-res1 is null
-res2 is not null
-Resource destroyed
- */
+    Resource acquired
+    res1 is not null
+    res2 is null
+    Ownership transferred
+    res1 is null
+    res2 is not null
+    Resource destroyed
+    */
 #endif
 /* 
 std::auto_ptr, and why to avoid it
