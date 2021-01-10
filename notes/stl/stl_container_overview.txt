@@ -1,0 +1,40 @@
+
+3 types on stl containers:
+1) Sequence containers : 
+    >maintain ordering of elements in the container
+    > we can choose where to insert by position
+        1) array 
+                - fixed size array
+                - allows random access
+        2) vector 
+                - dynamic array
+                - allows random access
+        3) list 
+            - doubly link list
+            - only provide access to the start & end. there is no random access
+            - element insertion is very fast, if you have position where to insert.
+        4) forward_list
+        5) deque ("deck") - double ended queue
+        6) basic_string ( vector of char)
+
+2) Associative Containers:
+    > elements are maintained in a sorted order ( increasing order by default)
+        1) set      - collection of unique similar elements
+        2) multiset - collection of similar elements - duplicacy is allowed
+        3) map      - collection of unique pairs of key & values - duplicacy of key is not allowed 
+                    - also called as associative arrays
+        4) multimap - collection of pairs of key & value, duplicacy of key is allowed
+                        e.g. dictionary
+3) Container Adapters 
+    > special predefined containers that are adaptive to specific use.
+        1) stack    
+             - elements inserted in LIFO(Last In first out)order,where elements are inserted (pushed) and removed (popped) from the end of the container
+             - default implemented using deque but can use vector or list
+        2) queue
+            - elements are inserted in FIFO order(First In first out),where elements are inserted (pushed) to the back of the container and removed (popped) from the front
+            - default implemented using deque, but can also use list.
+        3) priority_queue
+            - elements are kept sorted
+            - default max heap - returns highest priority element
+
+
