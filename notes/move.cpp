@@ -151,7 +151,8 @@
 /*     
     # noexcept exception specifier -  strong exception guarantee
         which guarantees that if a function is interrupted by an exception,
-        no memory will be leaked and the program state will not be changed 
+            no memory will be leaked
+            and the program state will not be changed 
         
         > copy ctr: if copy fails, src variable is not harmed or alter. 
                     we can discard the failed copy & move on
