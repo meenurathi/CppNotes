@@ -356,7 +356,7 @@ Rule:>>> Favor std::array, std::vector, or std::string over a smart pointer mana
     //converted
         #if 1
         #include <iostream>
-        #include<memory>
+        #include<memory>//// for std::unique_ptr
         
         class Fraction
         {
